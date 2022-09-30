@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_centerHorizontal="true"
+        android:id="@+id/day_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Date and Day of TODAY"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+<androidx.recyclerview.widget.RecyclerView
+    android:layout_marginTop="40sp"
+    android:layout_width="wrap_content"
+    android:layout_height="610sp"
+    android:id="@+id/recyclerview"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:layout_alignParentEnd="true"
+    android:tint="#fff"
+    android:id="@+id/taskdialog"
+    android:src="@drawable/add_icon"
+    android:layout_margin="21sp"
+    android:contentDescription="@string/add_task" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_toStartOf="@+id/taskdialog"
+        android:tint="#fff"
+        android:id="@+id/delete"
+        android:src="@drawable/delete_icon"
+        android:layout_margin="21sp"
+        android:contentDescription="@string/add_task" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_toStartOf="@+id/delete"
+        android:tint="#fff"
+        android:id="@+id/uncheck"
+        android:src="@drawable/cancel_icon"
+        android:layout_margin="21sp"
+        android:contentDescription="@string/add_task" />
+
+
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="380sp"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add Task"
+        android:textStyle="bold"
+        android:textSize="30sp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/taskTitle"/>
+
+   <EditText
+       android:layout_width="300sp"
+       android:layout_height="50sp"
+       android:hint="Enter Task Here"
+       android:layout_below="@+id/taskTitle"
+       android:layout_centerHorizontal="true"
+       android:background="@drawable/task_edittext"
+       android:paddingStart="20sp"
+       android:textStyle="bold"
+       android:layout_marginTop="20sp"
+       android:id="@+id/newtask"/>
+
+    <Button
+        android:layout_width="150sp"
+        android:layout_height="60sp"
+        android:text="ADD"
+        android:textStyle="bold"
+        android:shadowRadius="30"
+        android:id="@+id/addTask"
+        android:layout_below="@+id/newtask"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20sp"/>
+
+
+</RelativeLayout>

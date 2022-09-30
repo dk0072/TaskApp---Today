@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rlo">
+
+<androidx.cardview.widget.CardView
+    android:layout_width="400sp"
+    android:layout_height="wrap_content"
+    android:layout_margin="5sp"
+    app:cardCornerRadius="6sp">
+
+
+    <TextView
+        android:paddingBottom="10sp"
+        android:paddingStart="20sp"
+        android:layout_width="320sp"
+        android:layout_height="wrap_content"
+        android:text="Task Name Here"
+        android:textStyle="bold"
+        android:layout_marginTop="10sp"
+        android:textSize="20sp"
+        android:id="@+id/taskname"/>
+
+    <CheckBox
+        android:layout_marginTop="10sp"
+        android:layout_width="30sp"
+        android:layout_height="20sp"
+        android:layout_marginStart="330sp"
+        android:id="@+id/checkbox"/>
+
+</androidx.cardview.widget.CardView>
+
+</RelativeLayout>
